@@ -108,28 +108,26 @@ public class HomeActivity extends BaseActivity{
     }
 
     @Override public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.sort_by_popularity:
-                item.setChecked(!item.isChecked());
-                onSortChanged(Sort.POPULAR);
-                showMoviesFragment();
-                break;
+        int i = item.getItemId();
+        if (i == R.id.sort_by_popularity) {
+            item.setChecked(!item.isChecked());
+            onSortChanged(Sort.POPULAR);
+            showMoviesFragment();
 
-            case R.id.sort_by_rating:
-                item.setChecked(!item.isChecked());
-                onSortChanged(Sort.TOP_RATED);
-                showMoviesFragment();
-                break;
+        } else if (i == R.id.sort_by_rating) {
+            item.setChecked(!item.isChecked());
+            onSortChanged(Sort.TOP_RATED);
+            showMoviesFragment();
 
-            case R.id.sort_by_favorite:
-                item.setChecked(!item.isChecked());
-                showFavoriteMoviesFragment();
-                break;
-            case R.id.sort_by_upcoming:
-                item.setChecked(!item.isChecked());
-                onSortChanged(Sort.UPCOMING);
-                showMoviesFragment();
-                break;
+        } else if (i == R.id.sort_by_favorite) {
+            item.setChecked(!item.isChecked());
+            showFavoriteMoviesFragment();
+
+        } else if (i == R.id.sort_by_upcoming) {
+            item.setChecked(!item.isChecked());
+            onSortChanged(Sort.UPCOMING);
+            showMoviesFragment();
+
         }
         return super.onOptionsItemSelected(item);
     }

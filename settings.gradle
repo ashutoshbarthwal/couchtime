@@ -1,1 +1,1 @@
-include ':couchtime-base'
+include ':couchtime-base', ':couchtime-app'

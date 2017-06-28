@@ -194,9 +194,10 @@ public class MovieDetailsActivity extends BaseActivity {
 
 
     @Override public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_share: onClickShare();
-                break;
+        int i = item.getItemId();
+        if (i == R.id.action_share) {
+            onClickShare();
+
         }
         return super.onOptionsItemSelected(item);
     }
