@@ -93,8 +93,8 @@ public class MoviesDetailsFragment extends BaseFragment {
 
     private void inflateData() {
 
-        ImageLoadingUtils.load(mHeaderImage, "http://image.tmdb.org/t/p/w500/" + movies.getBackdrop_path());
-        ImageLoadingUtils.load(mMoviePosterImage, "http://image.tmdb.org/t/p/w185/" + movies.getPoster_path());
+        ImageLoadingUtils.load(mHeaderImage, "https://image.tmdb.org/t/p/w500/" + movies.getBackdrop_path());
+        ImageLoadingUtils.load(mMoviePosterImage, "https://image.tmdb.org/t/p/w185/" + movies.getPoster_path());
         mMovieTitle.setText(movies.getTitle());
         mMovieGenre.setText(GenreHelper.getGenreNamesList(movies.getGenres()).trim());
         mFavoriteButton.setSelected(movies.isFavorite());

@@ -50,7 +50,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
             movieViewHolder.mMovieName.setText(movies.getOriginal_title());
             movieViewHolder.mMovieGenre.setText(GenreHelper.getGenreNamesList(movies.getGenres()).trim());
 
-            ImageLoadingUtils.load(movieViewHolder.mMovieImage, "http://image.tmdb.org/t/p/w185/" + movies.getPoster_path());
+            ImageLoadingUtils.load(movieViewHolder.mMovieImage, "https://image.tmdb.org/t/p/w185/" + movies.getPoster_path());
 
             if(LocalStoreUtil.hasInFavorites(context, movies.getId())) {
                 movieViewHolder.mFavoriteButton.setSelected(true);

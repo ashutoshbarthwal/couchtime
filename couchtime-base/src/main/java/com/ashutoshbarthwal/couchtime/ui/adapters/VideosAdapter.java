@@ -42,7 +42,7 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.VideosView
     public void onBindViewHolder(VideosViewHolder holder, int position) {
             final Video movieVideos = mFeedList.get(position);
 
-            ImageLoadingUtils.load(holder.mVideoContainer, "http://img.youtube.com/vi/" + movieVideos.getKey() + "/0.jpg");
+            ImageLoadingUtils.load(holder.mVideoContainer, "https://img.youtube.com/vi/" + movieVideos.getKey() + "/0.jpg");
             holder.mVideoTitle.setText(movieVideos.getName());
 
             holder.itemView.setOnClickListener(new View.OnClickListener() {

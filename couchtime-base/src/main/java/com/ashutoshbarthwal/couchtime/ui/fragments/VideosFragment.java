@@ -154,7 +154,7 @@ public class VideosFragment extends BaseFragment implements  VideosAdapter.Callb
         int startTimeMillis = 0;
         boolean autoplay = true;
         boolean lightboxMode = false;
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v="+videoKey));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v="+videoKey));
         intent.putExtra("force_fullscreen",true);
 
         if (intent != null) {
