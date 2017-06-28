@@ -31,5 +31,6 @@
     <string name="content_authority">com.ashutoshbarthwal.couchtime</string>
 
     <string name="message_empty_movie_fragment">Please choose a movie</string>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://ashutoshbarthwal.com\",\n  }\n}]</string>
 
 </resources>
